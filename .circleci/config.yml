@@ -5,9 +5,10 @@ orbs:
 
 jobs:
   build:
-    parallelism: 4
+    parallelism: 10
     executor:
       name: win/default
+      size: "large"
       shell: powershell.exe
     steps:
       - checkout
