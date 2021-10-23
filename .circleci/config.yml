@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   build:
-    parallelism: 10
+    parallelism: 6
     executor:
       name: win/default
       shell: powershell.exe
