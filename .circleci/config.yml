@@ -1,0 +1,16 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@2.2.0
+
+jobs:
+  build:
+    parallelism: 10
+    executor:
+      name: win/default
+      shell: powershell.exe
+    steps:
+      - checkout
+      - run:
+          shell: powershell.exe
+          command: .\gembongdream.bat
